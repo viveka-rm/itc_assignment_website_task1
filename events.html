@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <link rel ="stylesheet" href="styles/style_event.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Team</title>
+</head>
+
+<body>
+     <nav>
+        <a href="index.html">Home  </a>
+        <div class="dropdown">
+            <a href="#">About Us</a>
+
+            <div class="dropdown-content">
+                <a href="about_itc.html">About ITC</a>
+                <a href="club.html">Clubs</a>
+                <a href="tech_team.html">Tech Teams</a>
+                <a href="comm.html">Communities</a>
+        </div>
+    </div>
+        
+        <a href="events.html">Events  </a>
+        <a href="team.html">Our Team  </a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div>
+    <h1>Events</h1>
+    <script src="event.js"></script>
+
+<div class="filter-container">
+  <div class="dropdown1" onclick="openMenu()">
+    <span id="selected">All Events</span>
+    <span class="arrow">▼</span>
+  </div>
+
+  <div id="dropdown1-menu" class="dropdown1-menu">
+    <div onclick="filterEvents('all')">All Events</div>
+    <div onclick="filterEvents('past')">Past</div>
+    <div onclick="filterEvents('current')">In Progress</div>
+    <div onclick="filterEvents('future')">Future</div>
+  </div>
+</div>
+
+<div id="events" class="events-container">
+
+  <div class="event-card" data-type="past">
+    <img src="img/hack.jpg" />
+    <h3>AI/ML Hackathon</h3>
+    <p>10-01-2025</p>
+  </div>
+
+  <div class="event-card" data-type="current">
+    <img src="img/work.png" />
+    <h3>HTML/CSS Workshop</h3>
+    <p>Ongoing</p>
+  </div>
+
+  <div class="event-card" data-type="future">
+    <img src="img/semi.jpg" />
+    <h3>Cybersecurity Seminar</h3>
+    <p>04-04-2026</p>
+
+  </div>
+    <div class="event-card" data-type="past">
+    <img src="img/semi.jpg" />
+    <h3>Cloud Computing Seminar</h3>
+    <p>20-05-2025</p>
+  </div>
+
+  <div class="event-card" data-type="current">
+    <img src="img/hack.jpg" />
+    <h3>Energy Efficiency Hackathon</h3>
+    <p>Ongoing</p>
+  </div>
+
+    <div class="event-card" data-type="future">
+    <img src="img/work.png" />
+    <h3>Game Devoplment</h3>
+    <p>30-07-2026</p>
+  </div>
+  
+</div>
+<footer class="footer">
+  <div class="foot-top">
+    <a href="https://www.facebook.com/tech.iitb/"><img src="img/fb.png"></a>
+    <a href="https://www.instagram.com/tech.iitb"><img src="img/ig.png"></a>
+    <a href="https://x.com/tech_iitb"><img src="img/x.png"></a>    
+    <img src="img/call.png">8128679781
+    <img src="img/mail.png">gcestech@iitb.ac.in
+  </div>
+
+  <p>Developed by ITC Web Team with ❤️</p>
+</footer>
+</body>
+</html>

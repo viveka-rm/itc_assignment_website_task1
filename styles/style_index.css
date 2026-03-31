@@ -1,0 +1,228 @@
+h1{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 130px;
+    margin: 0;
+    color:#5aa3cc;
+    text-shadow: 0 0 20px rgba(133,196,230,0.4);
+
+}
+
+
+nav{
+    text-align: center;
+    font-size:22px;
+    background-color:#1D125E;
+    padding: 12px 50px; 
+    width: fit-content;     
+    margin: 20px auto;     
+    border-radius: 15px;       
+    background: rgba(29, 18, 94, 0.6);  
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(133,196,230,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav:hover {
+    box-shadow: 0 0 15px rgba(133, 196, 230, 0.25);
+}
+nav a {
+    font-family: 'Orbitron', sans-serif;
+    color: #85c4e6;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: white;
+    background: rgba(133, 196, 230, 0.15);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(133, 196, 230, 0.3);
+}
+.dropdown{
+    position:relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(29, 18, 94, 0.9);
+    border-radius: 10px;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 0 10px rgba(133,196,230,0.2);
+}
+.dropdown-content a{
+    display: block;
+    padding: 10px 20px;
+    color: #85c4e6;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    text-align:left;
+}
+
+    
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+h4 {
+  text-align: center;
+  
+}
+.typing-text {
+  font-family: 'Orbitron', sans-serif;
+  color: #85c4e6;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #85c4e6;
+  animation: typing 3s steps(26, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 26ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+body{
+    margin:0;
+    background-image: 
+        linear-gradient(rgba(10,10,30,0.7), rgba(10,10,30,0.7)),
+        url("../img/hero.jpg") ;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+     
+}
+.abt{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:20px;
+}
+.abt-text{    
+    margin-left:20px; 
+    font-family: 'Orbitron', sans-serif;    
+    text-align:left;
+    font-size: 30px;
+    margin-top:120px;
+    color: #bcdff5;
+    max-width:700px;
+    text-decoration: none;
+    
+    
+}
+
+.abt-boxes{
+    margin-top:180px;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 50px;
+    margin-right:100px;
+    
+}
+.box{
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 30px;
+    padding-top:45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00f0ff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: flex-start;     /* push text down */
+    color: white;
+    height:110px;
+    transition: 0.3s;
+}
+.box:hover{
+    box-shadow: 0 0 10px rgba(133, 196, 230, 0.3);
+    transform: scale(1.1);
+}
+.footer{
+    margin-top:100px;
+    padding:30px;
+    background: rgba(29, 18, 94, 0.4);
+    color:#bcdff5;
+    text-align:center;
+}
+
+.foot-top{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+.foot-top img{
+     width: 20px;
+    height: 20px;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .abt {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .abt-boxes {
+        grid-template-columns: 1fr; /* 1 column */
+        margin: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .abt-text {
+        font-size: 18px;
+        margin: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .box {
+        font-size: 20px;
+        height: auto;
+        padding: 20px;
+    }
+}   
+img {
+    max-width: 100%;
+    height: auto;
+}
+html, body {
+    height: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+@media (max-width: 768px) {
+    .foot-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
