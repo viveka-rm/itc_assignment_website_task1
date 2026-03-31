@@ -220,9 +220,3 @@ html, body {
         background-attachment: scroll;
     }
 }
-@media (max-width: 768px) {
-    .foot-top {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
